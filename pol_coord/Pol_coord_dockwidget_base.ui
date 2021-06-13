@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>poligono_coordenadasDockWidgetBase</class>
+ <widget class="QDockWidget" name="poligono_coordenadasDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pol_coord</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>291</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Carga un archivo .csv donde se encuentran las coordenadas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cargar">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>130</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CARGAR COORDENADAS</string>
+    </property>
+   </widget>
+   <widget class="QgsFileWidget" name="qfw_seleccionar">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>28</y>
+      <width>321</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="qtw_table">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>83</y>
+      <width>311</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NORTE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ESTE</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btn_borrar">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>280</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BORRAR LISTA</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>320</y>
+      <width>171</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Procesamiento</string>
+    </property>
+    <widget class="QPushButton" name="btn_crearpunto">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>109</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CREAR CAPA PUNTO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_crearpoligono">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>128</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CREAR CAPA POLIGONO</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsFileWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsfilewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
